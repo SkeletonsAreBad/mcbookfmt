@@ -1,13 +1,13 @@
 #!/bin/env python3
 
 input = open('./in.txt', 'r')
-data = input.read().replace('\n\n', '\n')
+data = input.readlines()
 
 lines = []
 
 i = 0
 line = ''
-for l in data.split('\n'):
+for l in data:
     for w in l.split(' '):
         if i + len(w) + 1 <= 20:
             i += len(w) + 1
@@ -19,7 +19,8 @@ for l in data.split('\n'):
     lines.append(line.strip())
     i = 0
     line = ''
-    lines.append('')
+
+print(lines)
 
 
 input.close()
