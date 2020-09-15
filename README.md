@@ -1,6 +1,6 @@
 # mcbookfmt
 
-Convert any text into a Minecraft Book and Quill friendly format
+Convert any text into a Minecraft Book and Quill friendly format.
 
 Converts text to fit in 14 lines and 19 columns per page.
 
